@@ -1003,15 +1003,24 @@ L'unit\'a immaginaria che notoriamente si usa per caratterizzare l'impedenza di 
 
 \section{Trasformatore}
 
-Il trasformatore \'e costituito da due solenoidi detti, rispettivamente, \emph{primario} e \emph{secondario}. Se sul primo solenoide si applica una corrente elettrica \emph{continua}, ossia non variabile nel tempo, intorno ad essa si genera un campo magnetico $\vec{B}$, anch'esso \emph{non} variabile nel tempo. Un tale campo magnetico non sarà mai in grado di generare una forza elettromotrice indotta su una seconda spira perch\'e, come descritto dalla legge di Faraday-Neumann (equazione \ref{eq:FaradayNeunman}), questa \'e pari a meno la variazione nel tempo del flusso del campo magnetico.
+Il trasformatore \'e costituito da due solenoidi detti, rispettivamente, \emph{primario} e \emph{secondario}. Se sul primo solenoide si applica una corrente elettrica \emph{continua}, ossia non variabile nel tempo, intorno ad essa si genera un campo magnetico $\vec{B}$, anch'esso \emph{non} variabile nel tempo. Un tale campo magnetico non sarà mai in grado di generare una forza elettromotrice indotta su una seconda spira perch\'e, come descritto dalla legge di Faraday-Neumann (equazione \ref{eq:FaradayNeunman}), questa \'e pari alla variazione nel tempo del flusso del campo magnetico cambiata di segno.
 
 Affinch\'e il solenoide primario generi una forza elettromotrice indotta sul solenoide secondario, \'e necessario che esso generi un campo magnetico \emph{variabile} nel tempo, ciò è possibile \emph{soltanto} se sul primario passa una corrente elettrica \emph{alternata}. 
 
-In pratica, la variazione nel tempo del campo magnetico generato dal solenoide primario e concatenato sul solenoide secondario sarà proporzionale alla variazione nel tempo della corrente elettrica applicata sul solenoide primario
+
+%In pratica, la variazione nel tempo del campo magnetico generato dal solenoide primario e concatenato sul solenoide secondario sarà proporzionale alla variazione nel tempo della corrente elettrica applicata sul solenoide primario
+
+%\begin{eqnarray}
+%	\frac{\Delta i_{\textrm{primario} } }{\Delta t}\propto \frac{\Delta B_{\textrm{secondario}}}{\Delta t}
+%\end{eqnarray}
+
+Applicando una tensione alternata $V_1(t)$ sul circuito primario del trasformatore, si genera su di esso una corrente $i_1(t)$ e, di conseguenza, un campo magnetico $B_1(t)$ che supponiamo si concateni perfettamente con il circuito secondario l'equazione
 
 \begin{eqnarray}
-	\frac{\Delta i_{\textrm{primario} } }{\Delta t}\propto \frac{\Delta B_{\textrm{secondario}}}{\Delta t}
+	B_2(t) = \frac{\mu_0\mu_r i_1(t)N_1}{l}\propto V_1(t)
 \end{eqnarray}
+
+A sua volte, il campo magnetico $B_2(t)$ sviluppa una tensione $V_2(t)$ sul circuito secondario costituito da $N_2$ spire.
 
 Da questa osservazione si deduce (con dei passaggi matematici che, al momento, ometto) che la forza elettromotrice indotta sul solenoide secondario dovuto alla corrente elettrica alternata sul primario \'e data dalla formula
 
