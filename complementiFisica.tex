@@ -993,10 +993,10 @@ L'unit\'a immaginaria che notoriamente si usa per caratterizzare l'impedenza di 
 
 \begin{figure}[b!]		
 	\centering
-   	\includegraphics[width=3.2in]{sfasamento1.png}
+   	\includegraphics[width=3.2in]{sfasamento1.png}%loudnessFrequency.png
   	\caption{Sfasamento tra la funzione $\sin(t)$ (corrente, linea blu), e la funzione $\cos(t)$ (tensione, linea rossa). Nell'induttanza la tensione è in anticipo rispetto alla corrente.}
    	\label{fig:sfasamento1}
-\end{figure}%
+\end{figure}
 
 
 
@@ -1064,7 +1064,7 @@ Il suono è una onda meccanica. Ossia una perturbazione locale dello stato di pr
 
 
 
-L'orecchio umano è in grado di percepire intervalli di frequenza di segnali acustici che va da $20$ $Hz$ a $20$ $kHz$. Segnali acustici caratterizzati da frequenza \emph{superiore} a $20$ $kHz$ sono \emph{ultrasuoni}. Segnali acustici caratterizzati fa frequenze \emph{inferiori} a frequenze acustiche sono \emph{infrasuoni}. 
+L'orecchio umano è in grado di percepire intervalli di frequenza di segnali acustici che va da $20$ $Hz$ a $20$ $kHz$. In realt\'a \emph{non} tutte le frequenze sono percepite allo stesso modo. In figura \ref{fig:loudnessFrequency} risulta che la frequenza meglio percepita dall'orecchio umano \'e di poco superiore ai $1000$ $Hz$. La sensibilit\'a dell'orecchio diminuisce esponenzialmente quando si considerano valori di frequenza prossimi, rispettivamente, agli ultrasuoni e gli ultrasuoni. Segnali acustici caratterizzati da frequenza \emph{superiore} a $20$ $kHz$ sono \emph{ultrasuoni}. Segnali acustici caratterizzati fa frequenze \emph{inferiori} a frequenze acustiche sono \emph{infrasuoni}. 
 
 
 La propagazione di onde meccaniche non si manifesta soltanto in qualità di suono, ma si può manifestare, ad esempio, anche in qualità di trasmissione di energia sotto forma di calore.
@@ -1090,14 +1090,19 @@ Queste considerazioni risulteranno utili quando, nel paragrafo \ref{par:trasdSem
 
 
 
+\begin{figure}[b!]		
+	\centering
+   	\includegraphics[width=5.2in]{loudnessFrequency.png}
+  	\caption{Relazione tra livello di intensit\'a e frequenza per una persona con normali capacit\'a uditive. Le linee curve corrispondono a valori uguali del livello di rumore percepito dall'orecchio umano. Phon e decibels sono definiti come identici alla frequenza di $1000$ $Hz$.}
+   	\label{fig:loudnessFrequency}
+\end{figure}
 
 
 
 
 
 
-
-Il microfono, evidentemente, è un trasduttori acustico, cioè un dispositivo in grado di trasdurre un segnale elettrico in acustico. L'altoparlante, invece, è un dispositivo che, sempre sulla base dello stesso principio di funzionamento, esegue la trasduzione opposta, cioè converte il segnale elettrico in acustico.
+Il microfono, evidentemente, è un trasduttore acustico, cioè un dispositivo in grado di trasdurre un segnale elettrico in acustico. L'altoparlante, invece, è un dispositivo che, sempre sulla base dello stesso principio di funzionamento, esegue la trasduzione opposta, cioè converte il segnale elettrico in acustico.
 
 La figura \ref{fig:trasduttoreSuono} riporta uno schema di funzionamento di un altoparlante. Esso è costituito da uno statatore con una cavità dove è presente un campo magnetico $\vec{B}$ al suo interno, avente direzione radiale. Al passaggio di corrente attraverso la bobina contenuta nella cavità circolare dello statore, si genera una Forza di Lorentz (equazione \ref{eq:Lorentz}) che spinge la bobina, e quindi il cono di cartone ad essa vincolata, in direzione ortogonale alla corrente e al campo magnetico $\vec{B}$.
 
